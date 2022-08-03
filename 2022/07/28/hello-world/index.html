@@ -176,7 +176,13 @@
             </div>
         </div>
         <script src="https://cdn.staticfile.org/highlight.js/11.5.1/highlight.min.js"></script>
-        <script src="/js/background.js"></script>
+        <script type="text/javascript">
+        //只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+            document.write('<script type="text/javascript" src="/js/background.js"><\/script>');
+        }
+        </script>
         <script src="/js/particlex.js"></script>
         <script src="/js/showimg.js"></script>
         

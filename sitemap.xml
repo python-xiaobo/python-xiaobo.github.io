@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>http://tdxhb.com/about/index.html</loc>
     
     <lastmod>2022-08-03</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>http://tdxhb.com/categories/index.html</loc>
     
     <lastmod>2022-08-03</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>http://tdxhb.com/tags/index.html</loc>
     
     <lastmod>2022-08-03</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/08/03/hello-world/</loc>
+    <loc>http://tdxhb.com/2022/08/03/hello-world/</loc>
     
     <lastmod>2022-07-28</lastmod>
     
@@ -39,7 +39,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>http://tdxhb.com/</loc>
     <lastmod>2022-08-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>

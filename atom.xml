@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>小恐龙</title>
   
+  <subtitle>小恐龙の博客</subtitle>
+  <link href="http://tdxhb.com/atom.xml" rel="self"/>
   
-  <link href="http://example.com/atom.xml" rel="self"/>
-  
-  <link href="http://example.com/"/>
+  <link href="http://tdxhb.com/"/>
   <updated>2022-07-28T10:10:55.198Z</updated>
-  <id>http://example.com/</id>
+  <id>http://tdxhb.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>小恐龙</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2022/08/03/hello-world/"/>
-    <id>http://example.com/2022/08/03/hello-world/</id>
+    <link href="http://tdxhb.com/2022/08/03/hello-world/"/>
+    <id>http://tdxhb.com/2022/08/03/hello-world/</id>
     <published>2022-08-03T09:15:50.200Z</published>
     <updated>2022-07-28T10:10:55.198Z</updated>
     

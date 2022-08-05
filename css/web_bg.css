@@ -9,7 +9,7 @@
 /* 页脚footer */
 #footer {
     /* 与背景渐变效果一致*/
-    background-image: linear-gradient(-225deg, #d6badf 0%, #B8DCFF 28%, #58abf3 100%);
+    background-image: linear-gradient(-225deg, #58abf3 30%, #B8DCFF 100%, #dfbacd 20%);
 }
 
 #footer:before {

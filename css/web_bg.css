@@ -3,13 +3,13 @@
     /*紫粉渐变*/
     /*background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);*/
     /*粉白蓝*/
-    background-image: linear-gradient(-225deg, #dfbacd 30%, #B8DCFF 100%, #58abf3 20%);
+    /*background-image: linear-gradient(-225deg, #dfbacd 30%, #B8DCFF 100%, #58abf3 20%);*/
 }
 
 /* 页脚footer */
 #footer {
     /* 与背景渐变效果一致*/
-    background-image: linear-gradient(-225deg, #dfbacd 30%, #B8DCFF 100%, #58abf3 20%);
+    /*background-image: linear-gradient(-225deg, #dfbacd 30%, #B8DCFF 100%, #58abf3 20%);*/
 }
 
 #footer:before {
@@ -17,11 +17,48 @@
 }
 
 /* 首页文章栏背景透明 */
-#recent-posts>.recent-post-item,.layout_page>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post {
-    background: var(--light_bg_color)
+.cardHover, .layout > div:first-child:not(.recent-posts), #recent-posts > .recent-post-item, #aside-content .card-widget, .layout > .recent-posts .pagination > *:not(.space) {
+    /*background: var(--light_bg_color)*/
+    background: rgba(255,255,255,0.5)
+}
+
+/*文章图片透明度*/
+#recent-posts .post_cover{
+    filter: opacity(1)
 }
 
 /* 侧边栏透明 */
 #aside-content .card-widget {
-    background: var(--light_bg_color)
+    background: rgba(255,255,255,0.5)
+}
+
+/*头像的透明度*/
+.avatar-img{
+    filter: opacity(0.5)
+}
+
+/*其余图片的透明度*/
+.thumbnail{
+    filter: opacity(1)
+}
+
+/*页数*/
+#pagination .page-number.current {
+    background: rgba(255,255,255,0);
+    color: var(--white);
+}
+
+/* 右下角标设置*/
+#rightside > div > button, #rightside > div > a {
+    background: rgba(255,255,255,0);
+}
+
+/* github Follow ME 图片 */
+#aside-content .card-info #card-info-btn {
+    background: rgba(73,177,245,0.5);
+}
+
+/* 鼠标放在按钮上按钮的颜色*/
+:root {
+    --btn-hover-color: rgba(73,177,245,0.85)
 }

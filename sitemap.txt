@@ -1,4 +1,5 @@
-http://tdxhb.com/databases/index.html
+http://tdxhb.com/vvd_js/video_url.json
+http://tdxhb.com/photo/index.html
 http://tdxhb.com/about/index.html
 http://tdxhb.com/2022/08/05/hello-world%20-%20%E5%89%AF%E6%9C%AC/
 http://tdxhb.com/2022/08/03/hello-world/

@@ -1,10 +1,10 @@
-http://tdxhb.com/photo/index.html
-http://tdxhb.com/photo/data/year_quakes_small.json
+http://tdxhb.com/earth/index.html
+http://tdxhb.com/earth/data/year_quakes_small.json
 http://tdxhb.com/vvd_js/video_url.json
 http://tdxhb.com/about/index.html
-http://tdxhb.com/photo/data/world-110m.json
-http://tdxhb.com/2022/08/05/hello-world%20-%20%E5%89%AF%E6%9C%AC/
+http://tdxhb.com/earth/data/world-110m.json
 http://tdxhb.com/2022/08/03/hello-world/
+http://tdxhb.com/2022/08/05/hello-world%20-%20%E5%89%AF%E6%9C%AC/
 http://tdxhb.com/categories/index.html
 http://tdxhb.com/tags/index.html
 http://tdxhb.com/

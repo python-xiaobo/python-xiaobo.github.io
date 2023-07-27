@@ -3,11 +3,11 @@
   <title>小恐龙のBlog</title>
   
   
-  <link href="http://tdxhb.com/atom.xml" rel="self"/>
+  <link href="https://tdxhb.com/atom.xml" rel="self"/>
   
-  <link href="http://tdxhb.com/"/>
+  <link href="https://tdxhb.com/"/>
   <updated>2022-08-05T09:03:24.758Z</updated>
-  <id>http://tdxhb.com/</id>
+  <id>https://tdxhb.com/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://tdxhb.com/2022/08/03/hello-world/"/>
-    <id>http://tdxhb.com/2022/08/03/hello-world/</id>
+    <link href="https://tdxhb.com/2022/08/03/hello-world/"/>
+    <id>https://tdxhb.com/2022/08/03/hello-world/</id>
     <published>2022-08-03T09:15:50.200Z</published>
     <updated>2022-08-05T09:03:24.758Z</updated>
     

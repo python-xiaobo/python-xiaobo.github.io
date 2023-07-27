@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://tdxhb.com/earth/index.html</loc>
+    <loc>https://tdxhb.com/earth/index.html</loc>
     
     <lastmod>2023-07-18</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://tdxhb.com/earth/data/year_quakes_small.json</loc>
+    <loc>https://tdxhb.com/earth/data/year_quakes_small.json</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://tdxhb.com/vvd_js/video_url.json</loc>
+    <loc>https://tdxhb.com/vvd_js/video_url.json</loc>
     
     <lastmod>2023-07-08</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://tdxhb.com/about/index.html</loc>
+    <loc>https://tdxhb.com/about/index.html</loc>
     
     <lastmod>2023-04-03</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://tdxhb.com/earth/data/world-110m.json</loc>
+    <loc>https://tdxhb.com/earth/data/world-110m.json</loc>
     
     <lastmod>2022-08-19</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://tdxhb.com/2022/08/03/hello-world/</loc>
+    <loc>https://tdxhb.com/2022/08/03/hello-world/</loc>
     
     <lastmod>2022-08-05</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>http://tdxhb.com/categories/index.html</loc>
+    <loc>https://tdxhb.com/categories/index.html</loc>
     
     <lastmod>2022-08-03</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://tdxhb.com/tags/index.html</loc>
+    <loc>https://tdxhb.com/tags/index.html</loc>
     
     <lastmod>2022-08-03</lastmod>
     
@@ -75,7 +75,7 @@
   
 
   <url>
-    <loc>http://tdxhb.com/</loc>
+    <loc>https://tdxhb.com/</loc>
     <lastmod>2023-07-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>

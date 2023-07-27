@@ -65,15 +65,6 @@
   </url>
   
   <url>
-    <loc>http://tdxhb.com/categories/index.html</loc>
-    
-    <lastmod>2022-08-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://tdxhb.com/tags/index.html</loc>
     
     <lastmod>2022-08-03</lastmod>
@@ -85,7 +76,7 @@
 
   <url>
     <loc>http://tdxhb.com/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-07-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

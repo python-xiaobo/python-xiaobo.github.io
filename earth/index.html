@@ -25,8 +25,8 @@
 <meta property="og:site_name" content="小恐龙のBlog">
 <meta property="og:description" content=".banner {   height: 0px;   position: relative;   overflow: hidden;   cursor: default; }  .header-inner{   height: 60vh; }  .earth_title{   height: 10vh;   color: #fff;   text-align: center; }  .eart">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-18T02:49:52.019Z">
-<meta property="article:modified_time" content="2023-07-18T02:49:52.019Z">
+<meta property="article:published_time" content="2023-07-27T06:41:15.456Z">
+<meta property="article:modified_time" content="2023-07-27T06:41:15.456Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -371,10 +371,10 @@
 <div id='fatherobj3'>
     <canvas id='quakeCanvas3' width="606" height="1024"></canvas>
 </div>
-<script type='text/javascript' src='https://101.43.39.125/HexoFiles/js/planetaryjs/d3.v3.min.js'></script>
-<script type='text/javascript' src='https://101.43.39.125/HexoFiles/js/planetaryjs/topojson.v1.min.js'></script>
-<script type='text/javascript' src='https://101.43.39.125/HexoFiles/js/planetaryjs/planetaryjs.min.js'></script>
-<script type='text/javascript' src='https://101.43.39.125/HexoFiles/js/planetaryjs/moment.min.js'></script>
+<script type='text/javascript' src='js/planetaryjs/d3.v3.min.js'></script>
+<script type='text/javascript' src='js/planetaryjs/topojson.v1.min.js'></script>
+<script type='text/javascript' src='js/planetaryjs/planetaryjs.min.js'></script>
+<script type='text/javascript' src='js/planetaryjs/moment.min.js'></script>
 <script>
 
 (function() {
@@ -414,7 +414,7 @@
   planet.loadPlugin(autocenter({extraHeight: -120}));
   planet.loadPlugin(autoscale({extraHeight: -120}));
   planet.loadPlugin(planetaryjs.plugins.earth({
-    topojson: { file:   'https://101.43.39.125/HexoFiles/js/planetaryjs/world-110m.json' },
+    topojson: { file:   'data/world-110m.json' },
     oceans:   { fill:   '#001320' },
     land:     { fill:   '#06304e' },
     borders:  { stroke: '#001320' }

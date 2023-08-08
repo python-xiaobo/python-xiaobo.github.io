@@ -25,8 +25,8 @@
 <meta property="og:site_name" content="小恐龙のBlog">
 <meta property="og:description" content=".banner {   height: 0px;   position: relative;   overflow: hidden;   cursor: default; }  .header-inner{   height: 60vh; }  .earth_title{   height: 10vh;   color: #fff;   text-align: center; }  .eart">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-27T06:47:47.392Z">
-<meta property="article:modified_time" content="2023-07-27T06:47:47.392Z">
+<meta property="article:published_time" content="2023-07-31T11:42:43.587Z">
+<meta property="article:modified_time" content="2023-07-31T11:42:43.587Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -318,7 +318,7 @@
   <main>
     
       <div class="container nopadding-x-md">
-        <div id="board"
+        <div id="board" style="background-color: rgba(0, 0, 0, 0); box-shadow: rgba(0, 0, 0, 0) 0px 12px 15px 0px, rgba(0, 0, 0, 0) 0px 17px 50px 0px; width: 100%;"
           >
           
           <div class="container">
@@ -385,8 +385,9 @@
   header_obj = header_obj[0];
 
   header_obj.style.cssText = "height: 9vh;";
-  var temp_board_obj = document.getElementById('board');
-  temp_board_obj.style.cssText = "background-color: rgba(0,0,0,0);box-shadow:0 12px 15px 0 rgb(0 0 0 / 0%), 0 17px 50px 0 rgb(0 0 0 / 0%);width:100%;"
+<!--  因为在layout.ejs中去掉了该自定义页面的文章框也就是'board'，所以也就没有'board'这个对象了，所以先注释掉，有更好的处理方法在换-->
+<!--  var temp_board_obj = document.getElementById(''board'');-->
+<!--  temp_board_obj.style.cssText = "background-color: rgba(0,0,0,0);box-shadow:0 12px 15px 0 rgb(0 0 0 / 0%), 0 17px 50px 0 rgb(0 0 0 / 0%);width:100%;"-->
 
   var real_mask_obj = document.getElementsByClassName('real_mask');
   real_mask_obj = real_mask_obj[0]

@@ -25,8 +25,8 @@
 <meta property="og:site_name" content="小恐龙のBlog">
 <meta property="og:description" content=".banner {   height: 0px;   position: relative;   overflow: hidden;   cursor: default; }  .header-inner{   height: 60vh; }  .earth_title{   height: 10vh;   color: #fff;   text-align: center; }  .eart">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-08-09T11:13:20.376Z">
-<meta property="article:modified_time" content="2023-08-09T11:13:20.376Z">
+<meta property="article:published_time" content="2023-08-09T11:16:03.656Z">
+<meta property="article:modified_time" content="2023-08-09T11:16:03.656Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -437,6 +437,7 @@
   planet.draw(canvas);
 	var httpRequest = new XMLHttpRequest();
 <!--	https://101.43.39.125:6101/planet_info的数据中"mag": 1.5为白色（历史来访者）/"mag": 3为红色（当前来访者），可以设置多个"mag"为3的数据，这样就可以显示多个红色（当前来访者）-->
+<!--这里注意是'https://uipv4.zywvvd.com:33037/planet_info'还是https://101.43.39.125:6101/planet_info去https://www.zywvvd.com/earth_sta/网址查看-->
 	httpRequest.open('GET', 'https://uipv4.zywvvd.com:33037/planet_info', true);
 	httpRequest.setRequestHeader("Content-type","application/json");
 	httpRequest.send("");

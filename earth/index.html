@@ -25,8 +25,8 @@
 <meta property="og:site_name" content="小恐龙のBlog">
 <meta property="og:description" content=".banner {   height: 0px;   position: relative;   overflow: hidden;   cursor: default; }  .header-inner{   height: 60vh; }  .earth_title{   height: 10vh;   color: #fff;   text-align: center; }  .eart">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-31T11:42:43.587Z">
-<meta property="article:modified_time" content="2023-07-31T11:42:43.587Z">
+<meta property="article:published_time" content="2023-08-09T11:13:20.376Z">
+<meta property="article:modified_time" content="2023-08-09T11:13:20.376Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -357,15 +357,15 @@
     padding: 0rem 0 1rem 0;
     text-align: center;
 }
+
 </style>
 
 
-
 <div class="earth_title">
-	<div class="earth_word">
-		30天内的来访者
-	</div>
-	〇&nbsp 历史来访者 &nbsp&nbsp&nbsp  <span style="color:#F33">〇</span>&nbsp 当前来访者
+    <div class="earth_word">
+        30天内的来访者
+    </div>
+    〇&nbsp 历史来访者 &nbsp&nbsp&nbsp <span style="color:#F33">〇</span>&nbsp 当前来访者
 </div>
 
 <div id='fatherobj3'>
@@ -385,7 +385,7 @@
   header_obj = header_obj[0];
 
   header_obj.style.cssText = "height: 9vh;";
-<!--  因为在layout.ejs中去掉了该自定义页面的文章框也就是'board'，所以也就没有'board'这个对象了，所以先注释掉，有更好的处理方法在换-->
+<!--  因为在layout.ejs中去掉了该自定义页面的文章框也就是'board'，所以也就没有'board'这个对象了(或者已经先设置了'board'的属性了，这里就不用重复设置了)，所以先注释掉，有更好的处理方法在换-->
 <!--  var temp_board_obj = document.getElementById(''board'');-->
 <!--  temp_board_obj.style.cssText = "background-color: rgba(0,0,0,0);box-shadow:0 12px 15px 0 rgb(0 0 0 / 0%), 0 17px 50px 0 rgb(0 0 0 / 0%);width:100%;"-->
 
@@ -436,7 +436,8 @@
   planet.projection.rotate([250, -20, 0]);
   planet.draw(canvas);
 	var httpRequest = new XMLHttpRequest();
-	httpRequest.open('GET', 'https://101.43.39.125:6101/planet_info', true);
+<!--	https://101.43.39.125:6101/planet_info的数据中"mag": 1.5为白色（历史来访者）/"mag": 3为红色（当前来访者），可以设置多个"mag"为3的数据，这样就可以显示多个红色（当前来访者）-->
+	httpRequest.open('GET', 'https://uipv4.zywvvd.com:33037/planet_info', true);
 	httpRequest.setRequestHeader("Content-type","application/json");
 	httpRequest.send("");
 	httpRequest.onreadystatechange = function () {//请求后的回调接口，可将请求成功后要执行的程序写在其中
@@ -468,7 +469,8 @@
                 .text(function(d) {
                   return "Magnitude " + d;
                 });
-                d3.json('data/year_quakes_small.json', function(err, data) {
+<!--						year_quakes_small.json这里应该是一年的数据，感觉没用上-->
+                d3.json('https://101.43.39.125/HexoFiles/js/planetaryjs/year_quakes_small.json', function(err, data) {
                 if (err) {
                   alert("Problem loading the quake data.");
                   return;
@@ -546,6 +548,143 @@
                 });
             });
         }
+
+
+
+
+
+
+
+<!--&lt;!&ndash;        访问不了时的预备假数据，访问不了时取消注释&ndash;&gt;-->
+<!--        else {-->
+<!--&lt;!&ndash;	https://101.43.39.125:6101/planet_info的数据中"mag": 1.5为白色（历史来访者）/"mag": 3为红色（当前来访者），可以设置多个"mag"为3的数据，这样就可以显示多个红色（当前来访者）&ndash;&gt;-->
+<!--			var url = "data/planet_info.json"-->
+<!--			var request = new XMLHttpRequest();-->
+<!--			request.open("get", url);-->
+<!--			request.send(null);-->
+<!--			request.onload = function () {-->
+<!--				if (request.status == 200) {-->
+<!--					  var data = request.responseText;-->
+<!--					  testJson = JSON.parse(data);-->
+<!--					  // Create a color scale for the various earthquake magnitudes; the-->
+<!--					  // minimum magnitude in our data set is 2.5.-->
+<!--					  var colors = d3.scale.pow()-->
+<!--						.exponent(3)-->
+<!--						.domain([1, 2, 3, 8, 10])-->
+<!--						  .range(['white', 'white', 'red', 'red', 'purple']);-->
+<!--					  // Also create a scale for mapping magnitudes to ping angle sizes-->
+<!--					  var angles = d3.scale.pow()-->
+<!--						.exponent(3)-->
+<!--						.domain([2.5, 10])-->
+<!--						.range([0.5, 15]);-->
+<!--					  // And finally, a scale for mapping magnitudes to ping TTLs-->
+<!--					  var ttls = d3.scale.pow()-->
+<!--						.exponent(3)-->
+<!--						.domain([2.5, 10])-->
+<!--						.range([2000, 5000]);-->
+<!--						// Create a key to show the magnitudes and their colors-->
+<!--					  d3.select('#magnitudes').selectAll('li')-->
+<!--						.data(colors.ticks(9))-->
+<!--					  .enter()-->
+<!--						.append('li')-->
+<!--						.style('color', colors)-->
+<!--						.text(function(d) {-->
+<!--						  return "Magnitude " + d;-->
+<!--						});-->
+<!--&lt;!&ndash;						year_quakes_small.json这里应该是一年的数据，感觉没用上&ndash;&gt;-->
+<!--						d3.json('data/year_quakes_small.json', function(err, data) {-->
+<!--						if (err) {-->
+<!--						  alert("Problem loading the quake data.");-->
+<!--						  return;-->
+<!--						}-->
+<!--						data = testJson;-->
+<!--						var start = parseInt(data[0].time, 10);-->
+<!--						var end = parseInt(data[data.length - 1].time, 10);-->
+<!--						var currentTime = start;-->
+<!--						var lastTick = new Date().getTime();-->
+<!--						var updateDate = function() {-->
+<!--						  d3.select('#date').text(moment(currentTime).utc().format("MMM DD YYYY HH:mm UTC"));-->
+<!--						};-->
+<!--						// A scale that maps a percentage of playback to a time-->
+<!--						// from the data; for example, `50` would map to the halfway-->
+<!--						// mark between the first and last items in our data array.-->
+<!--						var percentToDate = d3.scale.linear()-->
+<!--						  .domain([0, 100])-->
+<!--						  .range([start, end]);-->
+<!--						// A scale that maps real time passage to data playback time.-->
+<!--						// 12 minutes of real time maps to the entirety of the-->
+<!--						// timespan covered by the data.-->
+<!--						var realToData = d3.scale.linear()-->
+<!--						  .domain([0, 1000 * 60 * 12])-->
+<!--						  .range([0, end - start]);-->
+<!--						var paused = false;-->
+<!--						// Pause playback and update the time display-->
+<!--						// while scrubbing using the range input.-->
+<!--						d3.select('#slider')-->
+<!--						  .on('change', function(d) {-->
+<!--							currentTime = percentToDate(d3.event.target.value);-->
+<!--							updateDate();-->
+<!--						  })-->
+<!--						  .call(d3.behavior.drag()-->
+<!--							.on('dragstart', function() {-->
+<!--							  paused = true;-->
+<!--							})-->
+<!--							.on('dragend', function() {-->
+<!--							  paused = false;-->
+<!--							})-->
+<!--						  );-->
+<!--						// The main playback loop; for each tick, we'll see how much-->
+<!--						// time passed in our accelerated playback reel and find all-->
+<!--						// the earthquakes that happened in that timespan, adding-->
+<!--						// them to the globe with a color and angle relative to their magnitudes.-->
+<!--						d3.timer(function() {-->
+<!--						  var now = new Date().getTime();-->
+<!--						  if (paused) {-->
+<!--							lastTick = now;-->
+<!--							return;-->
+<!--						  }-->
+<!--						  var realDelta = now - lastTick;-->
+<!--						  // Avoid switching back to the window only to see thousands of pings;-->
+<!--						  // if it's been more than 500 milliseconds since we've updated playback,-->
+<!--						  // we'll just set the value to 500 milliseconds.-->
+<!--						  realDelta = 5000;-->
+<!--						  var dataDelta = realToData(realDelta);-->
+<!--						  var toPing = data.filter(function(d) {-->
+<!--							return d.time >= currentTime && d.time <= currentTime + dataDelta;-->
+<!--						  });-->
+<!--						  for (var i = 0; i < toPing.length; i++) {-->
+<!--							var ping = toPing[i];-->
+<!--							planet.plugins.pings.add(ping.lng, ping.lat, {-->
+<!--							  // Here we use the `angles` and `colors` scales we built earlier-->
+<!--							  // to convert magnitudes to appropriate angles and colors.-->
+<!--							  angle: angles(ping.mag),-->
+<!--							  color: colors(ping.mag),-->
+<!--							  ttl:   ttls(ping.mag)-->
+<!--							});-->
+<!--						  }-->
+<!--						  currentTime += dataDelta;-->
+<!--						  if (currentTime > end) currentTime = start;-->
+<!--						  updateDate();-->
+<!--						  d3.select('#slider').property('value', percentToDate.invert(currentTime));-->
+<!--						  lastTick = now;-->
+<!--						});-->
+<!--					});-->
+<!--				}-->
+
+<!--					}-->
+<!--					}-->
+
+
+
+
+
+
+
+
+
+
+
+
 	};
   // Plugin to resize the canvas to fill the window and to
   // automatically center the planet when the window size changes
@@ -616,6 +755,7 @@
     };
   };
 })();
+
 </script>
 
 

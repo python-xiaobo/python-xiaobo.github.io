@@ -31,6 +31,8 @@
 <meta name="twitter:card" content="summary_large_image">
   
   
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
   
   <title>Hello World - 小恐龙のBlog</title>
 
@@ -102,7 +104,7 @@
 	"></div>
 	<div id="banner_video_insert">
 	</div>
-	<div id='vvd_banner_img'>
+	<div id='xhb_banner_img'>
 	</div>
 </div>
 <div id="banner"></div>
@@ -294,7 +296,7 @@
 
 </div>
 
-	<script type="text/javascript" src="/vvd_js/jquery.js"></script>
+	<script type="text/javascript" src="/xhb_js/jquery.js"></script>
 
 	<div class="banner" id='banner' >
 
@@ -323,7 +325,7 @@
 						}
 					}
 
-					$.getJSON('/vvd_js/video_url.json', function(data){
+					$.getJSON('/xhb_js/video_url.json', function(data){
 						if (true){
 							var video_list_length = data.length
 							var seed = Math.random()
@@ -335,7 +337,7 @@
 							banner_obj = document.getElementById("banner")
 							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat; background-size: cover;"
 
-							vvd_banner_obj = document.getElementById("vvd_banner_img")
+							vvd_banner_obj = document.getElementById("xhb_banner_img")
 
 							vvd_banner_content = "<img id='banner_img_item' src='" + pre_show_image_url + "' style='height: 100%; position: fixed; z-index: -999'>"
 							vvd_banner_obj.innerHTML = vvd_banner_content
@@ -559,9 +561,33 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/xhb_js/duration.js"></script> </div> 
     </div>
   
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
   
   
   
@@ -708,6 +734,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

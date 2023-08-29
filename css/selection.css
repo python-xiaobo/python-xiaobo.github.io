@@ -1,0 +1,30 @@
+::selection {
+  background: #ffffff00;
+  color: #f00;
+}
+
+.icon {
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+pre::selection, pre ::selection {
+  background: #fff;
+}
+
+[data-user-color-scheme='dark'] pre::selection, [data-user-color-scheme='dark'] pre ::selection {
+  background: #424858;
+  color: #fff;
+}
+
+/* 标题,目录...不可选中 */
+h1, h2, h3, h4, h5, h6, .line, footer, #toc, time, #subtitle.h2, .nav-link, .post-meta.mr-2, #busuanzi_container_page_pv, .note, .hover-with-bg {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}

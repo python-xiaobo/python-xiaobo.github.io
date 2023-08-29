@@ -25,13 +25,11 @@
 <meta property="og:site_name" content="小恐龙のBlog">
 <meta property="og:description" content=".banner {   height: 0px;   position: relative;   overflow: hidden;   cursor: default; }  .header-inner{   height: 60vh; }  .earth_title{   height: 10vh;   color: #fff;   text-align: center; }  .eart">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-08-09T11:16:03.656Z">
-<meta property="article:modified_time" content="2023-08-09T11:16:03.656Z">
+<meta property="article:published_time" content="2023-08-29T06:32:39.267Z">
+<meta property="article:modified_time" content="2023-08-29T06:32:39.267Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
-  
-    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>来访记录 - 小恐龙のBlog</title>
@@ -64,13 +62,16 @@
 
   
 <link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/css/scrollAnimation.css">
+<link rel="stylesheet" href="/css/cloudedGlass.css">
+<link rel="stylesheet" href="/css/selection.css">
 
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"tdxhb.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"tdxhb.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"mYnDkSNePO2XDsx9BiCXuc1v-MdYXbMMI","app_key":"kfu73e2yhyQZHbWhYd2ABFgk","server_url":"https://myndksne.api.lncldglobal.com","path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -291,10 +292,10 @@
 							banner_obj = document.getElementById("banner")
 							banner_obj.style.cssText = "background: url('" + pre_show_image_url + "') no-repeat; background-size: cover;"
 
-							vvd_banner_obj = document.getElementById("xhb_banner_img")
+							xhb_banner_obj = document.getElementById("xhb_banner_img")
 
-							vvd_banner_content = "<img id='banner_img_item' src='" + pre_show_image_url + "' style='height: 100%; position: fixed; z-index: -999'>"
-							vvd_banner_obj.innerHTML = vvd_banner_content
+							xhb_banner_content = "<img id='banner_img_item' src='" + pre_show_image_url + "' style='height: 100%; position: fixed; z-index: -999'>"
+							xhb_banner_obj.innerHTML = xhb_banner_content
 							set_video_attr('banner_img_item')
 
 							if (!isMobile) {
@@ -319,14 +320,7 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board" style="background-color: rgba(0, 0, 0, 0); box-shadow: rgba(0, 0, 0, 0) 0px 12px 15px 0px, rgba(0, 0, 0, 0) 0px 17px 50px 0px; width: 100%;"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
 <article class="page-content">
   
@@ -387,7 +381,7 @@
   header_obj = header_obj[0];
 
   header_obj.style.cssText = "height: 9vh;";
-<!--  因为在layout.ejs中去掉了该自定义页面的文章框也就是'board'，所以也就没有'board'这个对象了(或者已经先设置了'board'的属性了，这里就不用重复设置了)，所以先注释掉，有更好的处理方法在换-->
+<!--  因为在layout.ejs中去掉了该自定义页面的文章框也就是'board'，所以也就没有'board'这个对象了(或者已经先设置了'board'的属性了，这里就不用重复设置了)，所以先注释掉，有更好的处理方法在换|||后面board加了毛玻璃效果,导致board透明设置失效，所以这里还是在layout.ejs中去掉先-->
 <!--  var temp_board_obj = document.getElementById(''board'');-->
 <!--  temp_board_obj.style.cssText = "background-color: rgba(0,0,0,0);box-shadow:0 12px 15px 0 rgb(0 0 0 / 0%), 0 17px 50px 0 rgb(0 0 0 / 0%);width:100%;"-->
 
@@ -473,7 +467,7 @@
                   return "Magnitude " + d;
                 });
 <!--						year_quakes_small.json这里应该是一年的数据，感觉没用上-->
-                d3.json('https://101.43.39.125/HexoFiles/js/planetaryjs/year_quakes_small.json', function(err, data) {
+                d3.json('https://uipv4.zywvvd.com:33030/HexoFiles/js/planetaryjs/year_quakes_small.json', function(err, data) {
                 if (err) {
                   alert("Problem loading the quake data.");
                   return;
@@ -768,11 +762,6 @@
 
 
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     
 
     
@@ -812,33 +801,9 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/xhb_js/duration.js"></script> </div> 
+       <div class="xhb_footer" style="font-size: 0.85rem;"> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/xhb_js/duration.js"></script> </div> <div style="font-size: 0.85rem"> <span>Copyright © 2022-</span> <script type="text/javascript">document.write((new Date()).getFullYear());</script> <span>. All Rights Reserved.</span> </div> <div style="font-size: 0.85rem"> <a target="_blank" rel="noopener" href="https://developer.hitokoto.cn/" id="hitokoto_text"><span style="color: #DDD;"  id="hitokoto"></span></a> <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script> </div> <div style="font-size: 0.85rem"> <a href="https://icp.gov.moe/?keyword=20231588" target="_blank">萌ICP备20231588号</a> </div> </div> 
     </div>
   
-  
-    <div class="statistics">
-  
-  
-
-  
-    
-      <span id="busuanzi_container_site_pv" style="display: none">
-        总访问量 
-        <span id="busuanzi_value_site_pv"></span>
-         次
-      </span>
-    
-    
-      <span id="busuanzi_container_site_uv" style="display: none">
-        总访客数 
-        <span id="busuanzi_value_site_uv"></span>
-         人
-      </span>
-    
-    
-  
-</div>
-
   
   
   
@@ -893,9 +858,11 @@
 
   <script  src="/js/local-search.js" ></script>
 
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
+
+  
+<script src="/js/scrollAnimation.js"></script>
 
 
 

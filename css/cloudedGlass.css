@@ -1,0 +1,149 @@
+/* 背景模糊度得全局变量*/
+* {
+  --background-blur: 15px;
+}
+
+
+/* 文章主体框设置毛玻璃，在html中<div id="board"  用#board  */
+#board {
+  -webkit-backdrop-filter: blur(calc(var(--background-blur) * 2));
+  backdrop-filter: blur(calc(var(--background-blur) * 2));
+}
+
+/* 搜索框设置毛玻璃,在html中<div class="modal-content"  用.modal-content   */
+.modal-content{
+  -webkit-backdrop-filter: blur(calc(var(--background-blur) * 2));
+  backdrop-filter: blur(calc(var(--background-blur) * 2));
+}
+
+/* 页脚样式设置 与custom.css中页脚设置冲突，所以这里取消
+footer {
+  color: #1bc2c7 !important;
+  font-weight: 600;
+}
+
+footer span {
+  color: #1bc2c7 !important;
+  font-weight: 600;
+}
+*/
+
+/*导航栏目录信息*/
+#toc {
+  /* font-family: fangsong; */
+  padding: 10px;
+  top: 4rem;
+  background-color: var(--board-bg-color);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(var(--background-blur));
+  backdrop-filter: blur(var(--background-blur));
+}
+
+[data-user-color-scheme='dark'] {
+  --link-hover-bg-color: #36415199;
+  --text-color: #cecece !important;
+  --sec-text-color: #cecece !important;
+}
+
+:root {
+  --link-hover-bg-color: #f8f9fa57;
+  --text-color: #000;
+  --sec-text-color: #000;
+}
+
+.category-list .category {
+  margin-bottom: 0;
+}
+
+/* 侧栏分类 */
+
+aside.sidebar.category-bar {
+  top: 5rem;
+  background: var(--board-bg-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 2rem;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+aside.sidebar.category-bar a {
+  border-color: #00000000;
+}
+
+
+
+/* tag标签背景（文章里得，暂时用不到） */
+/*
+.note {
+  color: #000;
+}
+.note-info {
+  background-color: #eef7fa;
+}
+.note-success {
+  background-color: #eff8f0;
+}
+.note-warning {
+  background-color: #fdf8ea;
+}
+.note-primary {
+  background-color: #f5f0fa;
+}
+.note-secondary {
+  background-color: #f7f7f7;
+}
+.note-danger {
+  background-color: #fcf1f2;
+}
+.note-light {
+  background-color: #fff;
+}
+
+.note a {
+  color: #ff8b00;
+}
+
+[data-user-color-scheme='dark'] .note-info {
+  background-color: #eef7fadd;
+}
+[data-user-color-scheme='dark'] .note-success {
+  background-color: #eff8f0dd;
+}
+[data-user-color-scheme='dark'] .note-warning {
+  background-color: #fdf8eadd;
+}
+[data-user-color-scheme='dark'] .note-primary {
+  background-color: #f5f0fadd;
+}
+[data-user-color-scheme='dark'] .note-secondary {
+  background-color: #f7f7f7dd;
+}
+[data-user-color-scheme='dark'] .note-danger {
+  background-color: #fcf1f2dd;
+}
+[data-user-color-scheme='dark'] .note-light {
+  background-color: #ffffffdd;
+}
+*/
+
+/* 好像是整个网页背景得设置，就是深色模式和浅色模式切换时，背景图片变化得速度（0.5s为时间）等设置
+#web_bg {
+  transition: all 0.5s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+*/
+
+
+/* 深色模式文章封面图片设置 图片滤镜设置*/
+[data-user-color-scheme='dark'] .index-img img {
+  filter: grayscale(0.95) brightness(0.3);
+  transition: filter 0.3s ease-in-out;
+}
+[data-user-color-scheme='dark'] .index-card:hover img {
+  filter: grayscale(0) brightness(1);
+}

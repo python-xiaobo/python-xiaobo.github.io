@@ -1,6 +1,4 @@
-
-
-/* 站点导航 css */
+/* 站点导航页面 css
 
 
 
@@ -11,7 +9,8 @@ body{
 	background-color: #2F2F2F;
 }
 
-
+/* .siteMapWrapper 为导航页设置  参考https://cloud.tencent.com/developer/article/2238063*/
+/*
 .siteMapWrapper{
     max-width:900px;
     margin:80px auto;
@@ -62,13 +61,14 @@ body{
   overflow: hidden;
 }
 
+
 .hide{
     color:#fff;
     background-color:#fff;
     text-align:center;
     line-height:112px;
     transform: translate3d(0,0,-1px);
-    /* 3D空间内移动一个元素的位置 */
+    /* 3D空间内移动一个元素的位置 *//*
 }
 
 .sitemapCard{
@@ -128,7 +128,7 @@ body{
 @keyframes in-top {
     from  {transform: rotate3d(0,0,0,0deg)}
     to    {transform: rotate3d(-1,0,0,90deg)}
-} 
+}
 
 @keyframes out-top {
     from {transform: rotate3d(-1,0,0,90deg)}
@@ -199,13 +199,27 @@ body{
           animation-name: out-left;
           animation-play-state: running;
 }
+*/
 
 
 
 
 
+/* 页脚样式设置*/
+.xhb_footer {
+	color: #d9dbdc;
+}
+.xhb_footer a:link,
+.xhb_footer a:visited {
+	color:#d8d9da;
+	text-decoration:none;
+}
 
-
+.xhb_footer a:hover,
+.xhb_footer a:active {
+	color:#40b9ee;
+	text-decoration:none;
+}
 
 
 
@@ -228,33 +242,44 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ‘个人’标题栏下的子菜单网盘图标，暂时不需要
 .icon-xuniyingpan:before {
   content: "\ea6c";
 }
+*/
 
+/* ‘个人’标题栏下的子菜单关于图标，暂时不需要
 .icon-guanyuwomen:before {
   content: "\e61e";
 }
+*/
 
+/* ‘社交’标题栏下的子菜单RSS订阅图标，暂时不需要
 .icon-dingyue:before {
   content: "\e600";
 }
+*/
 
+/*
 .icon-pengyoufill:before {
   content: "\e745";
 }
 
+
 .icon-diqiu:before {
   content: "\e7b9";
 }
+*/
 
 .icon-wangzhan:before {
   content: "\e628";
 }
 
+/*
 .icon-chuansong:before {
   content: "\e602";
 }
+
 
 .icon-icon-:before {
   content: "\e62a";
@@ -263,6 +288,7 @@ body{
 .icon-lianjie:before {
   content: "\eadc";
 }
+
 
 .icon-sousuo:before {
   content: "\eafe";
@@ -287,11 +313,13 @@ body{
 .icon-tongji2:before {
   content: "\e61a";
 }
+*/
 
 .icon-tongjifenxi-xiangmubiaogetongji:before {
   content: "\e626";
 }
 
+/*
 .icon-train1:before {
   content: "\e742";
 }
@@ -303,34 +331,14 @@ body{
 .icon-a-BlackHole:before {
   content: "\e95a";
 }
+*/
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*导航栏目录信息
 .tocbot-link {
     color: #d8d9da;
 }
@@ -338,82 +346,19 @@ body{
 .toc-header, .toc-header > i {
     color: #d9dbdc;
 }
-
-.vvd_footer {
-	color: #d9dbdc;
-}
-.vvd_footer a:link, 
-.vvd_footer a:visited { 
-	color:#d8d9da;
-	text-decoration:none; 
-} 
-
-.vvd_footer a:hover, 
-.vvd_footer a:active { 
-	color:#40b9ee; 
-	text-decoration:none; 
-}
-
-#leancloud-site-pv-container {
-	color: #d9dbdc;
-}
-
-#leancloud-site-uv-container {
-	color: #d9dbdc;
-}
-
-p.admonition-title {
-    position: relative;
-    margin: -0.8rem -0.6rem 0.8em -0.6rem!important;
-    padding: 0.7rem 0.6rem 0.7rem 1.5rem;
-    font-weight: 700;
-    background-color: rgba(66,185,131,.1);
-}
-
-.admonition {
-    font-size: .9em!important;
-	line-height: 2;
-}
-
-.admonition {
-    margin: 1.5625em 0;
-    padding: 0.6rem;
-    overflow: hidden;
-    font-size: .64rem;
-    page-break-inside: avoid;
-    border-left: 0.3rem solid #42b983;
-    border-radius: 0.3rem;
-    box-shadow: 0 .1rem .4remrgba(0,0,0,.05),0 0 .05remrgba(0,0,0,.1);
-    background-color: #fafafa;
-}
+*/
 
 
-p.admonition-title-blue {
-    position: relative;
-    margin: -0.8rem -0.6rem 0.8em -0.6rem!important;
-    padding: 0.7rem 0.6rem 0.7rem 1.5rem;
-    font-weight: 700;
-    background-color: rgba(0,185,222,.1);
-}
-
-.admonition-blue {
-    font-size: .9em!important;
-	line-height: 2;
-}
-
-.admonition-blue {
-    margin: 1.5625em 0;
-    padding: 0.6rem;
-    overflow: hidden;
-    font-size: .64rem;
-    page-break-inside: avoid;
-    border-left: 0.3rem solid #00b8d4;
-    border-radius: 0.3rem;
-    box-shadow: 0 .1rem .4remrgba(0,0,0,.05),0 0 .05remrgba(0,0,0,.1);
-    background-color: #fafafa;
-}
-
+/* 滚动条, 这里设置宽度为0，也就是不显示滚动条*/
 ::-webkit-scrollbar {
   width: 0px;
   height: 6px;
 }<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+
+
+
+
+
+
+
+

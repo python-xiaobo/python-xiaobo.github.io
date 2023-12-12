@@ -13,6 +13,9 @@
   /*利用CSS3实现图片模糊效果也非常简单，用CSS3中的filter属性即可，针对不同浏览器用-webkit-filter、-moz-filter、-o-filter和-ms-filter*/
   filter: blur(1px);
   -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
 }
 
 .index-card:hover .index-img img{
@@ -22,5 +25,8 @@
 
   filter: blur(0);
   -webkit-filter: blur(0);
+  -moz-filter: blur(0);
+  -o-filter: blur(0);
+  -ms-filter: blur(0);
 
 }

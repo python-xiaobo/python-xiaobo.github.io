@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll('.index-card')
 if (cards.length) {
   document.querySelector('.row').setAttribute('style', 'overflow: hidden;')
-  const coefficient = document.documentElement.clientWidth > 768 ? 0.5 : 0.3
+  const coefficient = document.documentElement.clientWidth > 768 ? .5 : .3
   const origin =
     document.documentElement.clientHeight -
     cards[0].getBoundingClientRect().height * coefficient
@@ -24,7 +24,7 @@ if (cards.length) {
     cards.forEach((card) => {
       card.setAttribute(
         'style',
-        `--state: ${card.getBoundingClientRect().top - origin < 0 ? 1 : 0.5};`
+        `--state: ${card.getBoundingClientRect().top - origin < 0 ? 1 : 0.55};`
       )
     })
   }

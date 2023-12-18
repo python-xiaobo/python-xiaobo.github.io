@@ -24,7 +24,7 @@ if (cards.length) {
     cards.forEach((card) => {
       card.setAttribute(
         'style',
-        `--state: ${card.getBoundingClientRect().top - origin < 0 ? 1 : 2.5};`/*原来是1:0,但是手机端看不见所以调整为1:3 ,动画效果从左边划入变为右边划入*/
+        `--state: ${card.getBoundingClientRect().top - origin < 0 ? 1 : 2};`/*原来是1:0,但是手机端看不见所以调整为1:3 ,动画效果从左边划入变为右边划入*/
       )
     })
   }

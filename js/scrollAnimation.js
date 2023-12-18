@@ -24,7 +24,7 @@ if (cards.length) {
     cards.forEach((card) => {
       card.setAttribute(
         'style',
-        `--state: ${card.getBoundingClientRect().top - origin < 0 ? 1 : 0.6};`
+        `--state: ${card.getBoundingClientRect().top - origin < 0 ? 1 : 0.5};`
       )
     })
   }

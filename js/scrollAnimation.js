@@ -24,7 +24,7 @@ if (cards.length) {
     cards.forEach((card) => {
       card.setAttribute(
         'style',
-        `--state: ${card.getBoundingClientRect().top - origin < 0 ? 1 : 0.55};`
+        `--state: ${card.getBoundingClientRect().top - origin < 0 ? 1 : 0.55};`/*原来是1:0,但是手机端看不见所以调整为1: ,动画效果要弱些*/
       )
     })
   }

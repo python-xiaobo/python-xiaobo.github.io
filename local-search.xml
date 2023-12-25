@@ -4,142 +4,31 @@
   
   
   <entry>
-    <title>第六篇博客</title>
-    <link href="/2023/12/15/%E7%AC%AC%E5%85%AD%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2023/12/15/%E7%AC%AC%E5%85%AD%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <title>Maya CMake 构建 C++ 插件编译环境</title>
+    <link href="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/"/>
+    <url>/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h3 id="大佬参考地址"><a class="markdownIt-Anchor" href="#大佬参考地址"></a> 大佬参考地址</h3><blockquote><p>编译c++插件：Camera Lattice</p><p><a href="https://www.toolchefs.com/?portfolio=camera-lattice" title="https://www.toolchefs.com/?portfolio=camera-lattice">https://www.toolchefs.com/?portfolio=camera-lattice</a></p><p>Maya CMake 构建 C++ 插件编译环境智伤帝</p><p><a href="https://github.com/Toolchefs/cameraLattice" title="https://github.com/Toolchefs/cameraLattice"><strong>https://github.com/Toolchefs/cameraLattice</strong></a></p></blockquote><hr><h3 id="实际操作"><a class="markdownIt-Anchor" href="#实际操作"></a> 实际操作</h3><p>根据智伤帝的博客去配置了懒人包环境</p><blockquote><p><a href="https://blog.l0v0.com/posts/5875a169.html" title="https://blog.l0v0.com/posts/5875a169.html">https://blog.l0v0.com/posts/5875a169.html</a></p></blockquote><p>不过遇到了一点小问题</p><p>poetry shell时报错</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_Y9ltgsDn9m.png" alt></p><p>于是查看了下</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_jPqgBiNo26.png" alt></p><p>果断修改python版本（我这里时python3.9.1）</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_4Rp9jAUFIu.png" alt></p><p>在poetry shell时正常了。</p><hr><p>根据教程添加新工程，然后需将.cpp文件和.h文件放到CMakeLists.txt文件同目录下</p><p>最后在编译Camera Lattice插件时报错(打开VS生成看看具体错误，错误相同)：（警告忽略）</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_1o_nw0iWXU.png" alt></p><p>开始以为编译环境的问题但是尝试了一些简单的C++插件进行编译是可以的。</p><hr><p>于是又根据</p><p>Compiling Maya Plug-ins with CMake视频中的教程进行配置编译</p><blockquote><p><a href="https://www.bilibili.com/video/BV1bs4y1d7BQ?p=6&amp;vd_source=b58905f2a15d3b725f70ca36955ed61b" title="https://www.bilibili.com/video/BV1bs4y1d7BQ?p=6&amp;vd_source=b58905f2a15d3b725f70ca36955ed61b">https://www.bilibili.com/video/BV1bs4y1d7BQ?p=6&amp;vd_source=b58905f2a15d3b725f70ca36955ed61b</a></p><p><a href="https://www.youtube.com/watch?v=2mUOt_F2ywo&amp;list=PL_RMNSHxKvdUFTdl12WumiqnNWLn4LDQj" title="https://www.youtube.com/watch?v=2mUOt_F2ywo&amp;list=PL_RMNSHxKvdUFTdl12WumiqnNWLn4LDQj">https://www.youtube.com/watch?v=2mUOt_F2ywo&amp;list=PL_RMNSHxKvdUFTdl12WumiqnNWLn4LDQj</a></p></blockquote><p>需将.cpp文件和.h文件放到CMakeLists.txt文件同目录下，并在CMakeLists.txt内容中添加源文件和头文件</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_6GjsKer6ah.png" alt></p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_NE3noV0iBS.png" alt></p><p>然后再根据教程输入</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_RNs4Fu1KpB.png" alt></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">cmake -G <span class="hljs-string">&quot;Visual Studio 16 2019&quot;</span> -DMAYA_VERSION=<span class="hljs-number">2020</span> ../<br></code></pre></td></tr></table></figure><p>VS中打开build目录下生成的sampleplugin.sln文件</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_kTftnE-EnL.png" alt></p><blockquote><p>注意：</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/1681993090632_00G5q-0EIE.png" alt></p><p>需保持一致，不然可能出错。</p></blockquote><p>然后开始生成</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_HYmHkj_GtY.png" alt></p><p>结果还是报相同的错误：（警告忽略）</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_sUP6g_WKjJ.png" alt></p><hr><h3 id="解决错误"><a class="markdownIt-Anchor" href="#解决错误"></a> 解决错误</h3><p>visual studio。附加依赖项，加一个OpenGL32.lib，不用指定目录。</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/20200215165641703.jpg" alt></p><blockquote><p><a href="https://blog.csdn.net/weixin_45847407/article/details/126898176?spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-126898176-blog-86497150.235%5Ev30%5Epc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-126898176-blog-86497150.235%5Ev30%5Epc_relevant_default_base3&amp;utm_relevant_index=5" title="https://blog.csdn.net/weixin_45847407/article/details/126898176?spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-126898176-blog-86497150.235^v30^pc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-126898176-blog-86497150.235^v30^pc_relevant_default_base3&amp;utm_relevant_index=5">https://blog.csdn.net/weixin_45847407/article/details/126898176?spm=1001.2101.3001.6650.2&amp;utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-126898176-blog-86497150.235<sup>v30</sup>pc_relevant_default_base3&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-2-126898176-blog-86497150.235<sup>v30</sup>pc_relevant_default_base3&amp;utm_relevant_index=5</a></p><p>C++ Visual Studio报错:error LNKXXX: 无法解析的外部符号 __imp_XXXXX的解决方法</p></blockquote><p>这里正常生成正常了。</p><p>根据视频教程输入</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_5cyqOKKuH5.png" alt></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">cmake --build . --config Release --target Install<br></code></pre></td></tr></table></figure><p>ok之后就可以正常生成mll文件了。</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_odwGDVTCSf.png" alt></p><p>修改文件名为tcCameraLattice.mll放入maya插件目录下C:\Program Files\Autodesk\Maya2020\bin\plug-ins</p><hr><p>根据Camera Lattice插件源码中的python文件内容</p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_LC5T2eSZJW.png" alt></p><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_8xt8vn3t3-.png" alt></p><p>在maya脚本编辑器中：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> tcCameraLattice<br>m=tcCameraLattice.run()<br></code></pre></td></tr></table></figure><p><img src="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/image_PtUyyox9Gc.png" alt></p><p>然后就可以去愉快的测试了插件功能了。</p>]]></content>
     
+    
+    <categories>
+      
+      <category>TD</category>
+      
+      <category>Maya</category>
+      
+      <category>编程</category>
+      
+    </categories>
     
     
     <tags>
-      
-      <tag>记录</tag>
-      
-      <tag>C++</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>第五篇博客</title>
-    <link href="/2023/12/15/%E7%AC%AC%E4%BA%94%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2023/12/15/%E7%AC%AC%E4%BA%94%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>记录</tag>
       
       <tag>C++</tag>
       
       <tag>Python</tag>
       
-      <tag>lasdf</tag>
-      
-      <tag>adf</tag>
-      
-      <tag>adfa</tag>
-      
-      <tag>adfs</tag>
-      
-      <tag>qr</tag>
-      
-      <tag>qwr</tag>
-      
-      <tag>adgadggsh</tag>
-      
-      <tag>zcxvadshgfshq</tag>
-      
-      <tag>adsfasdf</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>第四篇博客</title>
-    <link href="/2023/12/15/%E7%AC%AC%E5%9B%9B%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2023/12/15/%E7%AC%AC%E5%9B%9B%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>记录</tag>
-      
-      <tag>C++</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>第三篇博客</title>
-    <link href="/2023/12/15/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2023/12/15/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>记录</tag>
-      
-      <tag>C++</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>第二篇博客</title>
-    <link href="/2023/12/15/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2023/12/15/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>记录</tag>
-      
-      <tag>Python</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>第一篇博客</title>
-    <link href="/2023/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2023/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>记录</tag>
+      <tag>Maya</tag>
       
     </tags>
     

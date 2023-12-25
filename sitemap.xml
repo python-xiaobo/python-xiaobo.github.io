@@ -2,54 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://tdxhb.com/2023/12/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://tdxhb.com/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/</loc>
     
-    <lastmod>2023-12-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/2023/12/15/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2023-12-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/2023/12/15/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2023-12-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/2023/12/15/%E7%AC%AC%E4%BA%94%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2023-12-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/2023/12/15/%E7%AC%AC%E5%9B%9B%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2023-12-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/2023/12/15/%E7%AC%AC%E5%85%AD%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2023-12-15</lastmod>
+    <lastmod>2023-12-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -121,96 +76,54 @@
 
   <url>
     <loc>https://tdxhb.com/</loc>
-    <lastmod>2023-12-18</lastmod>
+    <lastmod>2023-12-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://tdxhb.com/tags/%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://tdxhb.com/tags/C/</loc>
-    <lastmod>2023-12-18</lastmod>
+    <lastmod>2023-12-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tdxhb.com/tags/Python/</loc>
-    <lastmod>2023-12-18</lastmod>
+    <lastmod>2023-12-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://tdxhb.com/tags/lasdf/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/tags/adf/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/tags/adfa/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/tags/adfs/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/tags/qr/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/tags/qwr/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/tags/adgadggsh/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/tags/zcxvadshgfshq/</loc>
-    <lastmod>2023-12-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tdxhb.com/tags/adsfasdf/</loc>
-    <lastmod>2023-12-18</lastmod>
+    <loc>https://tdxhb.com/tags/Maya/</loc>
+    <lastmod>2023-12-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
 
+  
+  <url>
+    <loc>https://tdxhb.com/categories/TD/</loc>
+    <lastmod>2023-12-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tdxhb.com/categories/TD/Maya/</loc>
+    <lastmod>2023-12-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tdxhb.com/categories/TD/Maya/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2023-12-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>

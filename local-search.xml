@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Hellow Everyone</title>
+    <link href="/2023/12/15/record/Hello%20Everyone/"/>
+    <url>/2023/12/15/record/Hello%20Everyone/</url>
+    
+    <content type="html"><![CDATA[<p>欢迎大家来到我的博客，这里会分享我遇到的一些问题和一些小感悟。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>record</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>记录</tag>
+      
+      <tag>感想</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Maya CMake 构建 C++ 插件编译环境</title>
     <link href="/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/"/>
     <url>/2023/12/15/TD/Maya/%E7%BC%96%E7%A8%8B/Maya-CMake-%E6%9E%84%E5%BB%BA-C-%E6%8F%92%E4%BB%B6%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/</url>

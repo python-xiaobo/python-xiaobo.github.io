@@ -397,7 +397,7 @@
 <h3 id="第三种："><a href="#第三种：" class="headerlink" title="第三种："></a>第三种：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> pymel.core <span class="hljs-keyword">as</span> pm<br><span class="hljs-keyword">import</span> maya.OpenMaya <span class="hljs-keyword">as</span> OpenMaya<br><span class="hljs-keyword">import</span> maya.OpenMayaUI <span class="hljs-keyword">as</span> OpenMayaUI<br>view = OpenMayaUI.M3dView.active3dView()<br>cam_dag = OpenMaya.MDagPath()<br>view.getCamera(cam_dag)<br>camera_path_name = cam_dag.fullPathName()<br>camera_name = pm.listRelatives(camera_path_name, parent=<span class="hljs-literal">True</span>)[<span class="hljs-number">0</span>]<br><span class="hljs-built_in">print</span>(camera_name)<br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(camera_name))<br><br></code></pre></td></tr></table></figure>
 
 <p>三种方法虽然获取到的相机类型不一样，但是都能获取当前屏幕视角的相机名称</p>
-
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
                 
               </div>
             

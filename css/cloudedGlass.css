@@ -1,7 +1,0 @@
-/* 背景模糊度得全局变量*/
-* {
-  --background-blur: 15px;
-}
-
-
-/* 文章主体框设置毛玻璃，在html中<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>

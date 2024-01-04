@@ -352,18 +352,18 @@ body{
 /* valine评论输入框背景*/
 .wl-editor {
 	background-image: url(/img/open.webp); /*填写你的图片地址*/
-	background-size: contain;
+	background-size: 15%, 15%;
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: right bottom;
 	background-color: rgba(255, 255, 255, 0);
 	resize: vertical
 }
 /*评论框背景图输入时隐藏*/
 .wl-editor:focus {
 	background-image: url(/img/close.webp);
-	background-size: contain;
+	background-size: 15%, 15%;
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: right bottom;
 	background-color: rgba(255, 255, 255, 0);
 	resize: vertical
 }

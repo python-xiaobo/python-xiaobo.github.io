@@ -357,8 +357,6 @@ body{
 	background-position: right bottom;
 	background-color: rgba(255, 255, 255, 0);
 	resize: vertical
-
-	background-clip: content-box;
 }
 /*评论框背景图输入时隐藏*/
 .wl-editor:focus {
@@ -368,7 +366,6 @@ body{
 	background-position: right bottom;
 	background-color: rgba(255, 255, 255, 0);
 	resize: vertical
-	background-clip: content-box;
 }
 
 

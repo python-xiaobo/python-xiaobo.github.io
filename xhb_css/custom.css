@@ -352,7 +352,7 @@ body{
 /* valine评论输入框背景*/
 .wl-editor {
 	background-image: url(/img/open.webp); /*填写你的图片地址*/
-	background-size: 10%, 10%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-color: rgba(255, 255, 255, 0);

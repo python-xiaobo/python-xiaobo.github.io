@@ -10,11 +10,11 @@ var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
 
 if (!isMobile) {
 
-    const css = '.index-card {transition: all 0.5s;transform: scale(calc(1.5 - 0.5 * var(--state)));opacity: var(--state);margin-bottom: 2rem;}.index-img img {margin: 20px 0;transition: .4s;opacity:0.7;filter: blur(1px);-webkit-filter: blur(1px);-moz-filter: blur(1px);-o-filter: blur(1px);-ms-filter: blur(1px);}.index-card:hover .index-img img{transform: scale(1.08);    /*放大倍数*/opacity:1.0;filter: blur(0);-webkit-filter: blur(0);-moz-filter: blur(0);-o-filter: blur(0);-ms-filter: blur(0);}';
-    const $style = document.createElement('style');
-    $style.type = 'text/css';
-    $style.textContent = css;
-    document.body.appendChild($style);
+//    const css = '.wl-editor {background-image: url(/img/open.webp);background-size: 10%, 10%;background-repeat: no-repeat;background-position: right bottom;background-color: rgba(255, 255, 255, 0);resize: vertical}.wl-editor:focus {background-image: url(/img/close.webp);background-size: 10%, 10%;background-repeat: no-repeat;background-position: right bottom;background-color: rgba(255, 255, 255, 0);resize: vertical}'
+//    const $style = document.createElement('style');
+//    $style.type = 'text/css';
+//    $style.textContent = css;
+//    document.body.appendChild($style);
 
 
     const cards = document.querySelectorAll('.index-card')

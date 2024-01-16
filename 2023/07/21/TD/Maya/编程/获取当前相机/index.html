@@ -18,12 +18,12 @@
   <meta name="author" content="一只龙">
   <meta name="keywords" content="">
   
-    <meta name="description" content="第一种：12345import maya.cmds as mcprint(mc.lookThru(q&#x3D;True))print(type(mc.lookThru(q&#x3D;True)))  第二种：12345import pymel.core as pm print(pm.lookThru(q&#x3D;True))print(type(pm.lookThru(q&#x3D;True)))  第三种：123456789101">
+    <meta name="description" content="第一种： 12345import maya.cmds as mcprint(mc.lookThru(q&#x3D;True))print(type(mc.lookThru(q&#x3D;True)))  第二种： 12345import pymel.core as pm print(pm.lookThru(q&#x3D;True))print(type(pm.lookThru(q&#x3D;True)))  第三种： 12345678">
 <meta property="og:type" content="article">
 <meta property="og:title" content="获取当前相机">
 <meta property="og:url" content="https://tdxhb.com/2023/07/21/TD/Maya/%E7%BC%96%E7%A8%8B/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E7%9B%B8%E6%9C%BA/index.html">
 <meta property="og:site_name" content="一只龙のBlog">
-<meta property="og:description" content="第一种：12345import maya.cmds as mcprint(mc.lookThru(q&#x3D;True))print(type(mc.lookThru(q&#x3D;True)))  第二种：12345import pymel.core as pm print(pm.lookThru(q&#x3D;True))print(type(pm.lookThru(q&#x3D;True)))  第三种：123456789101">
+<meta property="og:description" content="第一种： 12345import maya.cmds as mcprint(mc.lookThru(q&#x3D;True))print(type(mc.lookThru(q&#x3D;True)))  第二种： 12345import pymel.core as pm print(pm.lookThru(q&#x3D;True))print(type(pm.lookThru(q&#x3D;True)))  第三种： 12345678">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tdxhb-image.oss-cn-chengdu.aliyuncs.com/blog/img/1074_20230808162457.jpg">
 <meta property="article:published_time" content="2023-07-21T11:09:00.000Z">
@@ -390,12 +390,12 @@
             
               <div class="markdown-body">
                 
-                <h3 id="第一种："><a href="#第一种：" class="headerlink" title="第一种："></a>第一种：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> maya.cmds <span class="hljs-keyword">as</span> mc<br><span class="hljs-built_in">print</span>(mc.lookThru(q=<span class="hljs-literal">True</span>))<br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(mc.lookThru(q=<span class="hljs-literal">True</span>)))<br><br></code></pre></td></tr></table></figure>
-
-<h3 id="第二种："><a href="#第二种：" class="headerlink" title="第二种："></a>第二种：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> pymel.core <span class="hljs-keyword">as</span> pm <br><span class="hljs-built_in">print</span>(pm.lookThru(q=<span class="hljs-literal">True</span>))<br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(pm.lookThru(q=<span class="hljs-literal">True</span>)))<br><br></code></pre></td></tr></table></figure>
-
-<h3 id="第三种："><a href="#第三种：" class="headerlink" title="第三种："></a>第三种：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> pymel.core <span class="hljs-keyword">as</span> pm<br><span class="hljs-keyword">import</span> maya.OpenMaya <span class="hljs-keyword">as</span> OpenMaya<br><span class="hljs-keyword">import</span> maya.OpenMayaUI <span class="hljs-keyword">as</span> OpenMayaUI<br>view = OpenMayaUI.M3dView.active3dView()<br>cam_dag = OpenMaya.MDagPath()<br>view.getCamera(cam_dag)<br>camera_path_name = cam_dag.fullPathName()<br>camera_name = pm.listRelatives(camera_path_name, parent=<span class="hljs-literal">True</span>)[<span class="hljs-number">0</span>]<br><span class="hljs-built_in">print</span>(camera_name)<br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(camera_name))<br><br></code></pre></td></tr></table></figure>
-
+                <h3 id="第一种"><a class="markdownIt-Anchor" href="#第一种"></a> 第一种：</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> maya.cmds <span class="hljs-keyword">as</span> mc<br><span class="hljs-built_in">print</span>(mc.lookThru(q=<span class="hljs-literal">True</span>))<br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(mc.lookThru(q=<span class="hljs-literal">True</span>)))<br><br></code></pre></td></tr></table></figure>
+<h3 id="第二种"><a class="markdownIt-Anchor" href="#第二种"></a> 第二种：</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> pymel.core <span class="hljs-keyword">as</span> pm <br><span class="hljs-built_in">print</span>(pm.lookThru(q=<span class="hljs-literal">True</span>))<br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(pm.lookThru(q=<span class="hljs-literal">True</span>)))<br><br></code></pre></td></tr></table></figure>
+<h3 id="第三种"><a class="markdownIt-Anchor" href="#第三种"></a> 第三种：</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> pymel.core <span class="hljs-keyword">as</span> pm<br><span class="hljs-keyword">import</span> maya.OpenMaya <span class="hljs-keyword">as</span> OpenMaya<br><span class="hljs-keyword">import</span> maya.OpenMayaUI <span class="hljs-keyword">as</span> OpenMayaUI<br>view = OpenMayaUI.M3dView.active3dView()<br>cam_dag = OpenMaya.MDagPath()<br>view.getCamera(cam_dag)<br>camera_path_name = cam_dag.fullPathName()<br>camera_name = pm.listRelatives(camera_path_name, parent=<span class="hljs-literal">True</span>)[<span class="hljs-number">0</span>]<br><span class="hljs-built_in">print</span>(camera_name)<br><br><span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(camera_name))<br><br></code></pre></td></tr></table></figure>
 <p>三种方法虽然获取到的相机类型不一样，但是都能获取当前屏幕视角的相机名称</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
                 
@@ -805,7 +805,7 @@
 
 
   
-<script src="/js/scrollAnimation.js"></script>
+<script src="/xhb_js/scrollAnimation.js"></script>
 
 
 
